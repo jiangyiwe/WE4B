@@ -1,1 +1,71 @@
-<p>addrestaurant works!</p>
+<body>
+    <div id="container">
+        <div class="form-row">
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="card">
+                            <h2 class="card-title text-center">Ajouter <a href="#">un restaurant</a></h2>
+                            <div class="card-body py-md-4">
+                                <form _lpchecked="1">
+                                    <div class="form-group">
+                                        <label>Restaurant Nom</label>
+                                        <input type="text" class="form-control" [(ngModel)]="restaurant.nom" name="nom">
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Restaurant Description</label>
+                                            <input type="textarea" class="form-control"
+                                                [(ngModel)]="restaurant.description" name="description">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Restaurant Adresse</label>
+                                            <input type="text" class="form-control" [(ngModel)]="restaurant.adresse"
+                                                name="adresse">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Restaurant Codepostal</label>
+                                            <input type="text" class="form-control" [(ngModel)]="restaurant.codepostal"
+                                                name="codepostal">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Restaurant Categorie</label>
+                                            <select class="form-select" aria-label="Default select example"
+                                                [(ngModel)]="restaurant.categorie">
+
+                                                <option *ngFor="let cat of categorie" [value]="cat.id">
+                                                    {{cat.id+1}}:{{cat.name}}</option>
+
+                                            </select>
+                                            <!--<input type="text" class="form-control" [(ngModel)]="restaurant.categorie"
+                                                name="Categorie">-->
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Restaurant Image</label>
+                                            <input type="text" class="form-control" [(ngModel)]="restaurant.img"
+                                                name="img">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit" (click)="addRestaurant()">Add
+                                        Restaurant</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

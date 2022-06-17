@@ -520,6 +520,17 @@ ici, nous attribuons des propriétés aux "<h1> qui sont à l'intérieur d'élé
     justify-content: space-between;
 }
 
+#footer {
+
+    display: block;
+    text-align: center;
+
+    width: 100%;
+    height: 30px;
+    position: fixed;
+
+}
+
 /*On peut combiner des hiérarchies et une déclaration multiples pour être encore plus efficace!*/
 .header hr,
 .footer hr {
@@ -625,6 +636,7 @@ h3.warning {
     height: 30px;
 }
 
+/*
 form {
     margin: 3 auto;
     width: 80%;
@@ -851,4 +863,4 @@ button:hover {
 .formfield {
     text-align: right;
     width: 100%;
-}
+}*/

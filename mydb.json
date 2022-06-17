@@ -1,0 +1,209 @@
+{
+  "restaurant": [
+    {
+      "id": 0,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": 0,
+      "likes": 4,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 1,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": 0,
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 2,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": 1,
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 3,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": "0",
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 4,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": "0",
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 5,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": "0",
+      "likes": 6,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 6,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": "0",
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 7,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": "0",
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 8,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": "0",
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 9,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": "Cafétéria",
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 10,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": "Restaurant categorie",
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 11,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": "",
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 12,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": "",
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 13,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": 0,
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 14,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": 0,
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    },
+    {
+      "id": 15,
+      "nom": "Restaurant Nom",
+      "description": "Restaurant Description",
+      "adresse": "Restaurant Adresse",
+      "codepostal": "Restaurant Codepostal",
+      "categorie": 0,
+      "likes": 0,
+      "img": "./assets/img/0.png"
+    }
+  ],
+  "menu": [
+    {
+      "id": 0,
+      "nom": "mymenu",
+      "description": "mydescription",
+      "matériaux": "mymatériaux",
+      "prix": 0,
+      "likes": 0,
+      "img": "./assets/img/1.png"
+    }
+  ],
+  "categorie": [
+    {
+      "id": 0,
+      "name": "Cafétéria"
+    },
+    {
+      "id": 1,
+      "name": "Classique Français"
+    },
+    {
+      "id": 2,
+      "name": "Asiatique"
+    },
+    {
+      "id": 3,
+      "name": "Fast Food"
+    },
+    {
+      "id": 4,
+      "name": "Vegan"
+    },
+    {
+      "id": 5,
+      "name": "Halal"
+    },
+    {
+      "id": 6,
+      "name": "Africain"
+    },
+    {
+      "id": 7,
+      "name": "Cafétéria"
+    }
+  ]
+}

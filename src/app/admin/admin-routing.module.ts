@@ -1,3 +1,6 @@
+import { MarketComponent } from './market/market.component';
+import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
+import { RestaurantFullComponent } from './restaurant-full/restaurant-full.component';
 import { AddrestaurantComponent } from './addrestaurant/addrestaurant.component';
 import { SignupComponent } from './signup/signup.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
@@ -12,9 +15,11 @@ const routes: Routes = [
   { path: 'menu', component: MenuComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'restaurant', component: RestaurantComponent },
+  { path: 'restaurant/:id', component: RestaurantFullComponent },
+  { path: 'restaurant-list', component: RestaurantListComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'addRestaurant', component: AddrestaurantComponent }
+  { path: 'addrestaurant', component: AddrestaurantComponent },
+  { path: 'market', component: MarketComponent }
 ];
 
 @NgModule({

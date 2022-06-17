@@ -1,3 +1,5 @@
+import { RestaurantserviceService } from './restaurantservice.service';
+import { CategorieserviceService } from './categorieservice.service';
 import { HomeComponent } from './admin/home/home.component';
 import { AboutComponent } from './admin/about/about.component';
 import { ContactComponent } from './admin/contact/contact.component';
@@ -10,7 +12,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-
+import { AddmenuComponent } from './admin/addmenu/addmenu.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +25,17 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AdminModule
+    AdminModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    RouterModule,
   ],
-  providers: [],
+  providers: [
+    HttpClientModule,
+    RestaurantserviceService,
+    CategorieserviceService],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

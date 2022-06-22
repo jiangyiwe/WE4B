@@ -41,7 +41,7 @@
                                             <select class="form-select" aria-label="Default select example"
                                                 [(ngModel)]="restaurant.categorie">
 
-                                                <option *ngFor="let cat of categorie" [value]="cat.id">
+                                                <option *ngFor="let cat of categorie" id="{{cat.id}}" [value]="cat.id">
                                                     {{cat.id+1}}:{{cat.name}}</option>
 
                                             </select>

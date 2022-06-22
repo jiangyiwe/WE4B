@@ -1,0 +1,14 @@
+<div class="row">
+
+    <div class="col">
+        <div class="row">
+            <ng-container *ngFor="let menuVar of MenuArray; let i = index ">
+                <div class="col-4">
+                    <app-menu [menu]="menuVar" [menu_idx]="i"></app-menu>
+                </div>
+            </ng-container>
+
+        </div>
+    </div>
+
+</div>

@@ -3,7 +3,8 @@ import { RestaurantserviceService } from './../../restaurantservice.service';
 import { Categorie } from './../../class/categorie';
 import { Restaurant } from './../../class/restaurant';
 import { Component, OnInit } from '@angular/core';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatButtonHarness } from '@angular/material/button/testing';
 @Component({
   selector: 'app-restaurant-list',
   templateUrl: './restaurant-list.component.html',
@@ -27,7 +28,7 @@ export class RestaurantListComponent implements OnInit {
   }
 
   FilterbyCat(categorie: Categorie) {
-    if (categorie.name != 'ALL')
+    if (categorie.id != 0)
       this.service.getDatabyCategorie(categorie).subscribe(data => {
         this.RestaurantArray = data
       })

@@ -1,19 +1,22 @@
-<div class="card" style="width: 18rem;">
-    <img src={{restaurant.img}} class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title" [ngClass]="{'fontColor size20 backgroundColor' : restaurant.nom.includes('C')}">Nom :
-            {{restaurant.nom}}</h5>
-        <p class="card-text">Description : {{restaurant.description}}</p>
-    </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Adresse : {{restaurant.adresse}} </li>
+<section id="full">
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <img src={{restaurant.img}} height="" alt="...">
+                </div>
+                <div class="about-text">
+                    <div class="title">
+                        <h2>Nom : {{restaurant.nom}}</h2>
+                        <p>Description : {{restaurant.description}}</p>
+                    </div>
+                    <p>Adresse : {{restaurant.adresse}}</p>
+                    <p>Codepostal : {{restaurant.codepostal}}</p>
+                    <p>Likes: {{restaurant.likes}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--text---------------------->
 
-
-        <li class="list-group-item">Codepostal : {{restaurant.codepostal}}</li>
-
-
-
-    </ul>
-    <p class="card-text"><small class="text-muted">Likes: {{restaurant.likes}}</small></p>
-    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example"></div>
-</div>
+</section>

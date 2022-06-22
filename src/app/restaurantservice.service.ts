@@ -28,7 +28,9 @@ export class RestaurantserviceService {
       })
     return this.restaurant
   }
-
+  getRestaurantid(restaurant: Restaurant): Observable<Restaurant> {
+    return this.http.get<Restaurant>('http://localhost:3000/restaurant?id=')
+  }
   getData(): Observable<Restaurant[]> {
     return this.http.get<Restaurant[]>('http://localhost:3000/restaurant')
   }

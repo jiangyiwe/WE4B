@@ -1,37 +1,51 @@
+<head>
+    <script src="https://kit.fontawesome.com/a357ae0183.js" crossorigin="anonymous"></script>
+</head>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<nav class="navbar navbar-expand-custom navbar-mainbg">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" aria-controls="jumbotronExample" aria-expanded="false"
             aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
-        <div mdbCollapse class="collapse navbar-collapse " id="jumbotronExample">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: right;">
-                <li class="nav-item active">
-                    <a class="nav-link" aria-current="page" [routerLink]="['']">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/market']">Restaurant</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/addrestaurant']">Addrestaurant</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/about']">About</a>
-                </li>
+        <i class="fa-brands fa-angular"></i>
+        <a class="navbar-brand navbar-logo" style="color: #cc6600;" aria-current="page" [routerLink]="['']">Home</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" style="color: black;">
 
+
+
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #cc6600;" [routerLink]="['/menupage']"><i
+                            class="fa-solid fa-utensils"></i>Restaurant</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #cc6600;" [routerLink]="['/addrestaurant']"><i
+                            class="fa-solid fa-plus"></i>Addrestaurant</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #cc6600;" [routerLink]="['/about']">
+                        <i class="fa-solid fa-address-card"></i>About</a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" style="color: #cc6600;" [routerLink]="['/signup']">
+                        <i class="fa-solid fa-user-plus"></i>
+
+                        Inscrivez-vous
+                    </a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" style="color: #cc6600;" [routerLink]="['/contact']">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Se Connecter</a>
+                </li>
             </ul>
-            <div class="d-flex align-items-center">
-                <button type="button" class="btn btn-link px-3 me-2" [routerLink]="['/signup']">
-                    Inscrivez-vous
-                </button>
-                <button type="button" class="btn btn-primary me-3" [routerLink]="['/contact']">
-                    Se Connecter
-                </button>
 
-            </div>
+
+
+
+
         </div>
     </div>
+
 </nav>
 
 <div class="container">

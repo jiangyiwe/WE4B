@@ -16,6 +16,10 @@ import { FormsModule } from '@angular/forms';
 import { CategorieserviceService } from '../categorieservice.service';
 import { RestaurantserviceService } from '../restaurantservice.service';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { MenuListComponent } from './menu-list/menu-list.component';
+import { MenuPageComponent } from './menu-page/menu-page.component';
+import { MenuNavbarComponent } from './menu-navbar/menu-navbar.component';
 
 
 @NgModule({
@@ -29,13 +33,17 @@ import { HttpClientModule } from '@angular/common/http';
     AddrestaurantComponent,
     AddmenuComponent,
     RestaurantFullComponent,
-    RestaurantListComponent
+    RestaurantListComponent,
+    MenuListComponent,
+    MenuPageComponent,
+    MenuNavbarComponent
   ],
   imports: [
     CommonModule,
     AdminRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ]
 
 })

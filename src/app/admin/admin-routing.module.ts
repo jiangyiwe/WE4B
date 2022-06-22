@@ -1,3 +1,5 @@
+import { AddmenuComponent } from './addmenu/addmenu.component';
+import { MenuPageComponent } from './menu-page/menu-page.component';
 import { MarketComponent } from './market/market.component';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 import { RestaurantFullComponent } from './restaurant-full/restaurant-full.component';
@@ -19,11 +21,12 @@ const routes: Routes = [
   { path: 'restaurant-list', component: RestaurantListComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'addrestaurant', component: AddrestaurantComponent },
-  { path: 'market', component: MarketComponent }
+  { path: 'menupage', component: MenuPageComponent },
+  { path: 'addmenu', component: AddmenuComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  //exports: [RouterModule]
 })
 export class AdminRoutingModule { }

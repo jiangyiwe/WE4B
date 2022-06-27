@@ -21,6 +21,7 @@ export class MenuService {
   getDatabyRestaurant(restaurant: Restaurant): Observable<Menu[]> {
     return this.http.get<Menu[]>('http://localhost:3000/menu?restaurant_id=' + restaurant.id)
   }
+  
   getMenuByIndex(menu_idx: number): Menu {
     this.http.get<Menu>('http://localhost:3000/menu/' + menu_idx)
       .subscribe(data => {
@@ -28,6 +29,7 @@ export class MenuService {
       })
     return this.menu
   }
+
   updateLikes(menu: Menu): Observable<Menu> {
     return this.http.put<Menu>('http://localhost:3000/menu/' + menu.id, menu)
   }

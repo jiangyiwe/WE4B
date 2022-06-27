@@ -7,7 +7,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RestaurantserviceService {
-
   restaurant!: Restaurant
   list_length!: number
   constructor(private http: HttpClient) {
@@ -15,22 +14,19 @@ export class RestaurantserviceService {
   }
   getDataLength() {
     this.http.get<Restaurant[]>('http://localhost:3000/restaurant').subscribe(data => {
-      this.list_length = (data).length
+      this.list_length = data.length
     })
   }
   updateLikes(restaurant: Restaurant): Observable<Restaurant> {
     return this.http.put<Restaurant>('http://localhost:3000/restaurant/' + restaurant.id, restaurant)
   }
-  getResByIndex(res_idx: number): Restaurant {
-    this.http.get<Restaurant>('http://localhost:3000/restaurant/' + res_idx)
-      .subscribe(data => {
-        this.restaurant = data
-      })
-    return this.restaurant
+  getResByIndex(res_idx: number): Observable<Restaurant> {
+    return this.http.get<Restaurant>('http://localhost:3000/restaurant/' + res_idx)
   }
   getRestaurantid(restaurant: Restaurant): Observable<Restaurant> {
     return this.http.get<Restaurant>('http://localhost:3000/restaurant?id=')
   }
+  
   getData(): Observable<Restaurant[]> {
     return this.http.get<Restaurant[]>('http://localhost:3000/restaurant')
   }
@@ -38,6 +34,7 @@ export class RestaurantserviceService {
   getDatabyCategorie(categorie: Categorie): Observable<Restaurant[]> {
     return this.http.get<Restaurant[]>('http://localhost:3000/restaurant?categorie=' + categorie.id)
   }
+  
   addRestaurant(restaurant: Restaurant): Observable<Restaurant> {
     return this.http.post<Restaurant>('http://localhost:3000/restaurant', restaurant)
   }

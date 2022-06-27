@@ -11,14 +11,13 @@ import { Router } from '@angular/router';
 export class MenuComponent implements OnInit {
   @Input() menu!: Menu
   @Input() menu_idx!: number
-  @Input() commtaire!: string
+  @Input() commentaire!: string
   constructor(private routeur: Router, private service: MenuService) { }
 
   ngOnInit(): void {
   }
 
   increment(event: Event) {
-
     this.menu.likes += 1 // -=1
     this.service.updateLikes(this.menu)
       .subscribe(data => {

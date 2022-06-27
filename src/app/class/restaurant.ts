@@ -10,7 +10,6 @@ export class Restaurant {
         public categorie: number,
         public likes: number,
         public img?: string
-
     ) {
         this.id = id
         this.nom = nom
@@ -20,7 +19,7 @@ export class Restaurant {
         this.categorie = categorie
         this.likes = likes
         if (img == undefined)
-            img = `./assets/img/${this.id}.png`
+            img = `./assets/images/${this.id}.png`
 
     }
 }

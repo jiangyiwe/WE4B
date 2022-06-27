@@ -1,22 +1,31 @@
-<section id="full">
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div>
-                    <img src={{restaurant.img}} height="" alt="...">
-                </div>
-                <div class="about-text">
-                    <div class="title">
-                        <h2>Nom : {{restaurant.nom}}</h2>
-                        <p>Description : {{restaurant.description}}</p>
+ <section id="full">
+    <div class="container">
+           
+                <div class="about-content">
+                    <div>
+                        <img src={{restaurant.img}}>
                     </div>
-                    <p>Adresse : {{restaurant.adresse}}</p>
-                    <p>Codepostal : {{restaurant.codepostal}}</p>
-                    <p>Likes: {{restaurant.likes}}</p>
+                    <div class="about-text">
+                            <h2>{{restaurant.nom}}</h2>
+                        <p>Description: {{restaurant.description}}</p>
+                        <p>Adresse: {{restaurant.adresse}}</p>
+                        <p>Code postale: {{restaurant.codepostal}}</p>
+                        <p>Likes: {{restaurant.likes}}</p>
+                    </div>
                 </div>
+     
+    </div><br><br><br>
+    
+    <div class="container">
+         <div class="row">
+                        <ng-container *ngFor="let menuVar of menus; let i = index ">
+                            <div class="col col-4">
+                                <app-menu [menu]="menuVar" [menu_idx]="i"></app-menu>
+                            </div>
+                        </ng-container>
+                
             </div>
-        </div>
-    </section>
-    <!--text---------------------->
-
-</section>
+      
+    
+</div>
+ </section>

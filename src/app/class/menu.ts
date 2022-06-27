@@ -1,13 +1,14 @@
-import { Restaurant } from './restaurant';
+
+
 export class Menu {
 
     constructor(
         public id: number,
         public nom: string,
         public description: string,
-        public prix: string,
+        public prix: number,
         public likes: number,
-        public restaurant_id: Restaurant["id"],
+        public restaurant_id : number,
         public img?: string
 
     ) {
@@ -21,4 +22,5 @@ export class Menu {
             img = `./assets/img/${this.id}.png`
 
     }
+
 }

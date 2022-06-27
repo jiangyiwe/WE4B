@@ -1,28 +1,27 @@
 import { AddmenuComponent } from './addmenu/addmenu.component';
-import { MenuPageComponent } from './menu-page/menu-page.component';
-import { MarketComponent } from './market/market.component';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 import { RestaurantFullComponent } from './restaurant-full/restaurant-full.component';
 import { AddrestaurantComponent } from './addrestaurant/addrestaurant.component';
 import { SignupComponent } from './signup/signup.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent },/* ,
+  { path: 'home', component: HomeComponent }, */
   { path: 'menu', component: MenuComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'about', component: AboutComponent },
   { path: 'restaurant/:id', component: RestaurantFullComponent },
   { path: 'restaurant-list', component: RestaurantListComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'addrestaurant', component: AddrestaurantComponent },
-  { path: 'menupage', component: MenuPageComponent },
-  { path: 'addmenu', component: AddmenuComponent }
+  { path: 'addmenu/:id', component: AddmenuComponent }/* ,
+  {path: '**', redirectTo: '/home'} */
 ];
 
 @NgModule({

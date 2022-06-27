@@ -18,7 +18,7 @@ export class RestaurantComponent implements OnInit {
   }
 
   increment(event: Event) {
-
+    event.stopPropagation()
     this.restaurant.likes += 1 // -=1
     this.service.updateLikes(this.restaurant)
       .subscribe(data => {
@@ -28,6 +28,7 @@ export class RestaurantComponent implements OnInit {
 
 
   decrement(event: Event) {
+    event.stopPropagation()
     if (this.restaurant.likes > 0)
       this.restaurant.likes -= 1 // -=1
     this.service.updateLikes(this.restaurant)
@@ -37,8 +38,6 @@ export class RestaurantComponent implements OnInit {
   }
 
   readMore() {
-
-    this.routeur.navigate(['/', 'restaurant', this.res_idx + 1])
-
+    this.routeur.navigate(['/', 'restaurant', this.res_idx])
   }
 }

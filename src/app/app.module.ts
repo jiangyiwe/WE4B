@@ -2,7 +2,7 @@ import { RestaurantserviceService } from './restaurantservice.service';
 import { CategorieserviceService } from './categorieservice.service';
 import { HomeComponent } from './admin/home/home.component';
 import { AboutComponent } from './admin/about/about.component';
-import { ContactComponent } from './admin/contact/contact.component';
+import { LoginComponent } from './admin/login/login.component';
 import { MenuComponent } from './admin/menu/menu.component';
 import { RestaurantComponent } from './admin/restaurant/restaurant.component';
 import { NgModule } from '@angular/core';

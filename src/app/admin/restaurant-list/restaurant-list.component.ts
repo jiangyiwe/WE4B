@@ -3,8 +3,7 @@ import { RestaurantserviceService } from './../../restaurantservice.service';
 import { Categorie } from './../../class/categorie';
 import { Restaurant } from './../../class/restaurant';
 import { Component, OnInit } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { MatButtonHarness } from '@angular/material/button/testing';
+
 @Component({
   selector: 'app-restaurant-list',
   templateUrl: './restaurant-list.component.html',
@@ -16,7 +15,7 @@ export class RestaurantListComponent implements OnInit {
   constructor(private service: RestaurantserviceService, private catServ: CategorieserviceService) {
 
     this.service.getData().subscribe(data => {
-      this.RestaurantArray = data
+      this.RestaurantArray = data.sort((r1, r2) => r2.likes - r1.likes)
     })
 
     this.catServ.getData().subscribe(data => {
